@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Projects - Magaiwa Web Solutions</title>
+  <link rel="stylesheet" href="index.css">
+  <style>
+    .projects {
+      padding: 50px 20px;
+      text-align: center;
+    }
+
+    .projects h2 {
+      font-size: 2rem;
+      margin-bottom: 30px;
+      color: #222;
+    }
+
+    .project-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      gap: 25px;
+      max-width: 1000px;
+      margin: 0 auto;
+    }
+
+    .project-card {
+      background: #fff;
+      border-radius: 20px;
+      box-shadow: 0px 6px 12px rgba(0,0,0,0.15);
+      padding: 20px;
+      transition: transform 0.3s ease;
+    }
+
+    .project-card:hover {
+      transform: translateY(-8px);
+    }
+
+    .project-card img {
+      width: 100%;
+      height: 200px;
+      border-radius: 15px;
+      object-fit: cover;
+      margin-bottom: 15px;
+    }
+
+    .project-card h3 {
+      font-size: 1.3rem;
+      color: #333;
+      margin-bottom: 10px;
+    }
+
+    .project-card p {
+      font-size: 1rem;
+      color: #666;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <nav class="navbar">
+      <h1 class="logo">Magaiwa Web</h1>
+      <ul class="nav-links">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="projects.html" class="active">Projects</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <section class="projects">
+    <h2>Our Projects</h2>
+    <div class="project-grid">
+      
+      <div class="project-card">
+        <img src="project1.jpg" alt="E-commerce Website">
+        <h3>E-commerce Website</h3>
+        <p>Designed a fully responsive online shop with secure checkout and modern UI.</p>
+      </div>
+
+      <div class="project-card">
+        <img src="project2.jpg" alt="Business Portfolio">
+        <h3>Business Portfolio</h3>
+        <p>Created a sleek portfolio site to showcase services and attract clients.</p>
+      </div>
+
+      <div class="project-card">
+        <img src="project3.jpg" alt="Blog Platform">
+        <h3>Blog Platform</h3>
+        <p>Developed a user-friendly blog system with comments and categories.</p>
+      </div>
+
+    </div>
+  </section>
+
+  <footer>
+    <p>© 2025 Magaiwa Web Solutions</p>
+  </footer>
+</body>
+</html>
